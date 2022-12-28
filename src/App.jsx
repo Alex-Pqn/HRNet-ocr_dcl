@@ -1,6 +1,5 @@
 import './style/style.scss';
 
-import { useState } from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 
 import DefaultHeader from './components/Default/DefaultHeader/DefaultHeader';

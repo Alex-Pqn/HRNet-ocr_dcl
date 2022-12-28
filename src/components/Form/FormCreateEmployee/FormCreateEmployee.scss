@@ -1,0 +1,61 @@
+@import '../../../style/variables';
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-sizing: border-box;
+
+  @media screen and (max-width: 920px) {
+    flex-direction: column;
+  }
+
+  fieldset {
+    border-radius: 7px;
+    border: none;
+    margin: 0 20px;
+    min-width: 320px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+    padding: 30px;
+
+    @media screen and (max-width: 920px) {
+      margin-bottom: 35px;
+    }
+
+    legend {
+      padding: 7px;
+      border-radius: 7px;
+      font-weight: bold;
+    }
+    .inputs {
+      label {
+        font-weight: bold;
+        display: block;
+        margin-top: 1rem;
+        margin-bottom: 17px;
+      }
+      input {
+        width: 100%;
+        height: 25px;
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
+
+.save-btn {
+  width: 100%;
+  border: 1px solid black;
+  height: 40px;
+  margin-top: 35px;
+  transition: 0.3s;
+  font-size: 1.1rem;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.datepicker {
+  width: 100%;
+  height: 32px;
+  background-color: #fff;
+}

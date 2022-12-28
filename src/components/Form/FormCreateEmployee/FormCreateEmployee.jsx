@@ -1,7 +1,10 @@
 import './FormCreateEmployee.scss';
 
+import { Modal } from '@alex-pqn/react-modal';
+
 import { useDispatch } from 'react-redux';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 import DatePicker from 'react-date-picker';
 import DefaultSelectOption from '../../Default/DefaultSelectOption/DefaultSelectOption';
@@ -15,7 +18,7 @@ import EmployeeModel from '../../../_models/employee/employee.model.js';
 const FormCreateEmployee = () => {
   const dispatch = useDispatch();
 
-  const [isOpen, setIsOpen] = useState(false);
+  const [isModalShown, setIsModalShown] = useState(false);
   const [state, setState] = useState({
     startDate: new Date(),
     dateOfBirth: new Date(),
@@ -28,9 +31,8 @@ const FormCreateEmployee = () => {
     setState(state);
   };
 
-  const saveEmployee = (e) => {
-    e.preventDefault();
-
+  const displayModal = () => setIsModalShown(true);
+  const createEmployee = () =>
     dispatch(
       employeeActions.addEmployee(
         new EmployeeModel({
@@ -47,7 +49,10 @@ const FormCreateEmployee = () => {
       )
     );
 
-    setIsOpen(true);
+  const saveEmployee = (e) => {
+    e.preventDefault();
+    createEmployee();
+    displayModal();
   };
 
   const handleKeypress = (e) => {
@@ -55,6 +60,10 @@ const FormCreateEmployee = () => {
       saveEmployee();
     }
   };
+
+  useEffect(() => {
+    console.log(isModalShown);
+  });
 
   return (
     <form action="#" method="GET" id="create-employee">
@@ -167,7 +176,17 @@ const FormCreateEmployee = () => {
           Save
         </button>
       </fieldset>
-      {/* MODALE */}
+      <Modal
+        isShown={isModalShown}
+        trigger={setIsModalShown}
+        title="Employee Created !"
+        message={
+          <span>
+            You have successfully created a new employee. You can{' '}
+            <Link to="/list">view the entire list</Link>.
+          </span>
+        }
+      />
     </form>
   );
 };

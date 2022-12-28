@@ -61,10 +61,6 @@ const FormCreateEmployee = () => {
     }
   };
 
-  useEffect(() => {
-    console.log(isModalShown);
-  });
-
   return (
     <form action="#" method="GET" id="create-employee">
       <fieldset className="informations left-part">

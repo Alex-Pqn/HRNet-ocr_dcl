@@ -1,0 +1,37 @@
+@import '../../../style/variables';
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+
+  &__title {
+    width: 30%;
+    a {
+      text-decoration: none;
+      h1 {
+        margin: 0;
+        font-size: 2rem;
+        color: rgb(14, 66, 109);
+      }
+    }
+  }
+
+  &__navbar {
+    ul {
+      margin: 0;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      li {
+        font-size: 1.2em;
+        margin-right: 25px;
+        a {
+          text-decoration: none;
+          color: rgb(11, 87, 150);
+        }
+      }
+    }
+  }
+}

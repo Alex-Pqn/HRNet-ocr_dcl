@@ -66,7 +66,7 @@ Jade
 
 Ça y est, vous avez toutes les informations dont vous avez besoin. Maintenant, le plus dur sera de choisir quel plugin jQuery convertir !
 
-#### Objectifs
+#### Objectifs réalisés
 
 - Conversion de la [fenêtre modale en une librairie react](https://github.com/Alex-Pqn/HRNet-modal-ocr_dcl)
 - Intégration de la nouvelle librairie sur ce projet

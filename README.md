@@ -86,6 +86,7 @@ Jade
 
 ## Project setup
 
+> [!NOTE]
 > A [Github Pages preview](https://alex-pqn.github.io/HRNet-ocr_dcl/) is also available for this project
 
 ### Install

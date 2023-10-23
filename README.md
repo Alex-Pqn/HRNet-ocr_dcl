@@ -77,6 +77,8 @@ Jade
 - Architecture des dossiers et fichiers respectée
 - Utilisation de Sass et de la méthodologie BEM
 - Responsive
+  
+### [Prévisualisation du site](https://alex-pqn.github.io/HRNet-ocr_dcl/)
 
 ## Prerequisites
 
@@ -87,6 +89,9 @@ Jade
 | 18.x         | :white_check_mark: |
 
 ## Project setup
+
+> [!NOTE]
+> A [Github Pages preview](https://alex-pqn.github.io/HRNet-ocr_dcl/) is also available for this project
 
 ### Install
 

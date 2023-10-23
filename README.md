@@ -77,12 +77,16 @@ Jade
 - Architecture des dossiers et fichiers respectée
 - Utilisation de Sass et de la méthodologie BEM
 - Responsive
+- 
+### [Prévisualisation du site](https://alex-pqn.github.io/HRNet-ocr_dcl/)
 
 ## Prerequisites
 
 - You will need to have Node and `npm` installed locally on your machine.
 
 ## Project setup
+
+> A [Github Pages preview](https://alex-pqn.github.io/HRNet-ocr_dcl/) is also available for this project
 
 ### Install
 

@@ -1,13 +1,13 @@
-import './DefaultHeader.scss';
+import './DefaultHeader.scss'
 
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 
 const Header = () => {
   return (
     <header className="header">
       <div className="header__title">
         <Link to="/">
-          <h1>HR Net</h1>
+          <h1>HRNet</h1>
         </Link>
       </div>
       <div className="header__navbar">
@@ -23,7 +23,7 @@ const Header = () => {
         </nav>
       </div>
     </header>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

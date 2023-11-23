@@ -21,6 +21,9 @@ form {
     @media screen and (max-width: 920px) {
       margin-bottom: 35px;
     }
+    @media screen and (max-width: 568px) {
+      min-width: auto;
+    }
 
     legend {
       padding: 7px;
